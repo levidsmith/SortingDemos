@@ -1,0 +1,6 @@
+Club,24,640
+Bamboo Pole,8,100
+Hand Axe,15,980
+Broad Sword,40,150
+Flame Sword,35,560
+Copper Sword,15,180

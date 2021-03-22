@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://.import/DemoManager.gd" type="Script" id=1]
+[ext_resource path="res://.import/DemoIntegerSort.gd" type="Script" id=2]
+[ext_resource path="res://.import/DemoStringSort.gd" type="Script" id=3]
+[ext_resource path="res://.import/DemoObjectSort.gd" type="Script" id=4]
+
+[sub_resource type="Theme" id=1]
+
+[node name="DemoManager" type="Node"]
+script = ExtResource( 1 )
+
+[node name="DemoIntegerSort" type="Node" parent="."]
+pause_mode = 1
+script = ExtResource( 2 )
+
+[node name="DemoStringSort" type="Node" parent="."]
+pause_mode = 1
+script = ExtResource( 3 )
+
+[node name="DemoObjectSort" type="Node" parent="."]
+pause_mode = 1
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_top = 2.0
+margin_right = -1.0
+margin_bottom = 2.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnsortedLabel" type="RichTextLabel" parent="Control"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 311.0
+margin_bottom = 314.0
+theme = SubResource( 1 )
+text = "Unsorted"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SortedLabel" type="RichTextLabel" parent="Control"]
+margin_left = 146.0
+margin_top = 1.0
+margin_right = 466.0
+margin_bottom = 313.0
+text = "Sorted"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SortedInsensitiveLabel" type="RichTextLabel" parent="Control"]
+margin_left = 296.0
+margin_right = 515.0
+margin_bottom = 312.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
